@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=71d91bf9-0809-4c75-a1e2-f1c8ea55199b&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div class="myDiv" id="map"></div>
+    <div class="popup hidden">
+        <header class="popup__header">
+            <div class="popup__address"></div>
+            <div class="popup__close">&times;</div>
+        </header>
+        <div class="popup__reviews">Отзывов пока нет...</div>
+        <h2>Ваш отзыв</h2>
+        <form action="#" class="popup__form" name="review-form" id="review-form">
+            <input type="text" name="name" id="name" placeholder="Ваше имя">
+            <input type="text" name="place" id="place" placeholder="Укажите место">
+            <textarea name="review" id="review" placeholder="Поделитесь впечатлениями"></textarea>
+            <button type="button" id="submit">Добавить</button>
+        </form>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
